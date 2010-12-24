@@ -1,8 +1,23 @@
 <header>
-  <%= image_tag("logo.png", :alt => "Home", :class => "round") %>
+  <!-- image variables -->
+  <% logo = image_tag("logo.png", :alt => "Home", :class => "round") %>
+  <% about = image_tag("about.png", :alt => "About", :class => "round",
+                        :mouseover => "about.png") %>
+  <% contact = image_tag("contact.png", :alt => "Contact", :class => "round",
+                          :mouseover => "contact.png")%>
+
+  <!-- home page -->
+  <%= link_to logo, home_path %>
+
   <nav class="round">
-    <%= image_tag("about.png", :alt => "About", :class => "round") %>
+    <!-- about page -->
+    <%= link_to about, about_path %>
+
+    <!-- dash separator -->
     <%= image_tag("dash.png", :alt => "-", :class => "round") %>
-    <%= image_tag("contact.png", :alt => "Contact", :class => "round") %>
+
+    <!-- contact page -->
+    <%= link_to contact, contact_path %>
+
   </nav>
 </header>

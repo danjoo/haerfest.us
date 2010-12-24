@@ -6,6 +6,9 @@ HaerfestUs::Application.routes.draw do
   get "pages/contact"
   
   root :to => "pages#home"
+  match '/home',    :to => 'pages#home'
+  match '/contact', :to => 'pages#contact'
+  match '/about',   :to => 'pages#about'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
