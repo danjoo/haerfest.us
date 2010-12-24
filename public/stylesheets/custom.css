@@ -9,49 +9,57 @@
 .container {
 }
 
+header {
+  text-align: center;
+}
+
 body {
   background: #fff;
   text-align: center;
 }
 
-header {
-  text-align: center;
-}
-
 section {
   color: #333333;
+  height: 500px;
   font-family: "Century Gothic", "sans-serif";
 }
 
 section h1 {
-  font-size: 200%;
+  font-size: 85%;
+  color: #888888;
+}
+
+section .about {
+}
+
+section .contact {
+}
+
+section .verbage {
+  font-size: 80%;
 }
 
 footer {
   text-align: center;
-  margin-top: 15px;
+  margin-top: 0px;
   margin-left: auto;
   margin-right: auto;
-}
-
-footer nav {
-  float: none;
 }
 
 
 /* Links */
 
-a {
+nav a {
   color: #09c;
   text-decoration: none;
 }
 
-a:hover {
+nav a:hover {
   color: #069;
   text-decoration: underline;
 }
 
-a:visited {
+nav a:visited {
   color: #069;
 }
 
