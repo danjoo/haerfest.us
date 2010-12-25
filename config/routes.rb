@@ -1,8 +1,8 @@
 HaerfestUs::Application.routes.draw do
+  resources :images
+
   get "pages/home"
-
   get "pages/about"
-
   get "pages/contact"
   
   root :to => "pages#home"
