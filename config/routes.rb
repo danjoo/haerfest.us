@@ -1,6 +1,4 @@
 HaerfestUs::Application.routes.draw do
-  resources :galleries
-
   get "pages/home"
 
   get "pages/about"
