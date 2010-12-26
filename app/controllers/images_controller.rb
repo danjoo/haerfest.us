@@ -20,6 +20,7 @@ class ImagesController < ApplicationController
   # GET /images/1.xml
   def show
     @image = Image.find(params[:id])
+    @images = Image.all.paginate(:per_page => 1, :page => params[:page])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -31,6 +32,7 @@ class ImagesController < ApplicationController
   # GET /images/new.xml
   def new
     @image = Image.new
+    @images = Image.all.paginate(:per_page => 1, :page => params[:page])
 
     respond_to do |format|
       format.html # new.html.erb
@@ -41,12 +43,14 @@ class ImagesController < ApplicationController
   # GET /images/1/edit
   def edit
     @image = Image.find(params[:id])
+    @images = Image.all.paginate(:per_page => 1, :page => params[:page])
   end
 
   # POST /images
   # POST /images.xml
   def create
     @image = Image.new(params[:image])
+    @images = Image.all.paginate(:per_page => 1, :page => params[:page])
 
     respond_to do |format|
       if @image.save
@@ -63,6 +67,7 @@ class ImagesController < ApplicationController
   # PUT /images/1.xml
   def update
     @image = Image.find(params[:id])
+    @images = Image.all.paginate(:per_page => 1, :page => params[:page])
 
     respond_to do |format|
       if @image.update_attributes(params[:image])
@@ -80,6 +85,7 @@ class ImagesController < ApplicationController
   def destroy
     @image = Image.find(params[:id])
     @image.destroy
+    @images = Image.all.paginate(:per_page => 1, :page => params[:page])
 
     respond_to do |format|
       format.html { redirect_to(images_url) }
