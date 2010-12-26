@@ -1,0 +1,50 @@
+/* 
+    Document   : pagination
+    Created on : Dec 26, 2010, 2:28:22 PM
+    Author     : danjoo
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+.apple_pagination {
+  background: #F1F1F1;
+  border: 1px solid #E5E5E5;
+  text-align: center;
+  font-size: 70%;
+  padding: 1em; }
+
+  .apple_pagination a, .apple_pagination span, .digg_pagination em {
+    padding: .2em .3em; }
+  .apple_pagination span.disabled {
+    color: #AAA; }
+  .apple_pagination em {
+    font-weight: bold;
+    background: transparent url(apple-circle.gif) no-repeat 50% 50%; }
+  .apple_pagination a {
+    text-decoration: none;
+    color: black; }
+    .apple_pagination a:hover, .apple_pagination a:focus {
+      text-decoration: underline; }
+
+.haerfest_pagination {
+  text-align: center;
+  font-size: 70%;
+  padding: 1em; }
+
+  .haerfest_pagination a, .haerfest_pagination span {
+    padding: .2em .3em; }
+  .haerfest_pagination span.disabled {
+    color: #AAA; }
+  .haerfest_pagination em {
+    font-weight: bold;}
+  .haerfest_pagination a {
+    text-decoration: none;
+    color: black; }
+    .haerfest_pagination a:hover, .haerfest_pagination a:focus {
+      text-decoration: underline; }
+

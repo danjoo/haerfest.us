@@ -1,6 +1,11 @@
 class ImagesController < ApplicationController
   # GET /images
   # GET /images.xml
+
+  def gallery
+    @images = Image.all.paginate(:per_page => 1, :page => params[:page])
+  end
+
   def index
     #@images = Image.all
     #@images = Image.paginate(:page => params[:page])
