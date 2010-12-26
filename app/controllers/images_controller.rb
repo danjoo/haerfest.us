@@ -2,8 +2,9 @@ class ImagesController < ApplicationController
   # GET /images
   # GET /images.xml
   def index
-    @images = Image.all
-
+    #@images = Image.all
+    #@images = Image.paginate(:page => params[:page])
+    @images = Image.all.paginate(:per_page => 1, :page => params[:page])
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @images }

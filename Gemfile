@@ -6,4 +6,5 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 group :development do
   gem 'rspec'
   gem 'annotate-models'
+  gem 'will_paginate', "3.0.pre2"
 end

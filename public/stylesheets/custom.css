@@ -59,23 +59,23 @@ img {
 nav {
   float: none;
   background-color: white;
-#  padding: 0 0.7em;
+  /* padding: 0 0.7em; */
   border-style: none;
   white-space: nowrap;
 }
 
 nav a {
-#  color: #09c;
+  /* color: #09c; */
   text-decoration: none;
 }
 
 nav a:hover {
-#  color: #069;
+  /* color: #069; */
   text-decoration: underline;
 }
 
 nav a:visited {
-#  color: #069;
+  /* color: #069; */
   text-decoration: none;
 }
 
@@ -100,4 +100,12 @@ a:visited {
   -moz-border-radius:    10px;
   -webkit-border-radius: 10px;
   border-radius:         10px;
+}
+
+
+
+/* table */
+section .table {
+  text-align:center;
+  border-width: 1px;
 }
