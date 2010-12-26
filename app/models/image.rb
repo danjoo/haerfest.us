@@ -12,4 +12,8 @@
 #
 
 class Image < ActiveRecord::Base
+  attr_accessible :style, :photo_type, :path
+
+  validates :style, :presence => true
+  validates :path, :presence => true
 end
