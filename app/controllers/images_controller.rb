@@ -9,7 +9,7 @@ class ImagesController < ApplicationController
   def index
     #@images = Image.all
     #@images = Image.paginate(:page => params[:page])
-    @images = Image.all.paginate(:per_page => 1, :page => params[:page])
+    @images = Image.all.paginate(:per_page => 5, :page => params[:page])
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @images }
