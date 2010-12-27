@@ -1,3 +1,9 @@
-<% @images.each do |image| %>
+
+<div id="slideshow">
+
+  <% @images.each do |image| %>
     <%= image_tag("gallery/"+image.path, :alt => "") %>
-<% end %>
+  <% end %>
+
+</div>
+
