@@ -1,7 +1,0 @@
-AuthName "HAERFEST.US Coming Soon - Jan 2011"
-AuthType Basic
-AuthUserFile /var/www/.htpasswd
-Require valid-user
-
-
-
