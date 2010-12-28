@@ -5,10 +5,15 @@
 }
 
 #slideshow IMG {
+    z-index:8;
+    opacity:0.0;
 }
 
 #slideshow IMG.active {
+    z-index:10;
+    opacity:1.0;
 }
 
 #slideshow IMG.last-active {
+    z-index:9;
 }
