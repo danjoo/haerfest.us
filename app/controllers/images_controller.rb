@@ -4,6 +4,9 @@ class ImagesController < ApplicationController
 
   def gallery
     @images = Image.all.paginate(:per_page => 1, :page => params[:page])
+    if request.xml_http_request?
+      render :partial => "section"
+    end
   end
 
   def index

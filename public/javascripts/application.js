@@ -3,8 +3,10 @@
 
 $(document).ready(function() {
   $('div.pagination a').live('click', function() {
-    $('#slideshow').fadeToggle("fast", "swing").load(this.href, addClickHandlers)
-    return false
+    $('#slideshow').fadeOut("slow", function() {
+      // Animation complete.
+      $('#slideshow').load(this.href);
+    })
   })
 })
 
