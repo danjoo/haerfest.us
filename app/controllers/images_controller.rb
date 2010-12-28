@@ -4,6 +4,8 @@ class ImagesController < ApplicationController
 
   def gallery
     @images = Image.all.paginate(:per_page => 1, :page => params[:page])
+    @next = Image.find(params[:id])
+    @next_image = @Image.next #might be nil if @image is the last group in the table
     if request.xml_http_request?
       render :partial => "section"
     end
