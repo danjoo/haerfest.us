@@ -3,9 +3,9 @@ class ImagesController < ApplicationController
   # GET /images.xml
 
   def gallery
-    @images = Image.all.paginate(:per_page => 1, :page => params[:page])
-    @next = Image.find(params[:id])
-    @next_image = @Image.next #might be nil if @image is the last group in the table
+    @images = Image.paginate(:per_page => 1, :page => params[:page])
+    @image = @images.first()
+    @next_image = @image.next
     if request.xml_http_request?
       render :partial => "section"
     end
@@ -26,7 +26,6 @@ class ImagesController < ApplicationController
   def show
     @image = Image.find(params[:id])
     @images = Image.all.paginate(:per_page => 1, :page => params[:page])
-
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @image }

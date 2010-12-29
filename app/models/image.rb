@@ -16,4 +16,9 @@ class Image < ActiveRecord::Base
 
   validates :style, :presence => true
   validates :path, :presence => true
+
+  def next
+    self.class.find(:first, :conditions => ["id > ?",self.id])
+  end
+
 end

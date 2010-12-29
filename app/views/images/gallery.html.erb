@@ -1,11 +1,13 @@
 <div id="slideshow">
 
-  <% image = image_tag("gallery/"+image.path, :alt => "") %>
  
   <% @images.each do |image| %>
+  <% image = image_tag("gallery/"+image.path, :alt => "") %>
     <% if @next_image %>
-      <%= link_to "Next", image_path(@next_image) %>
-      <%= image_tag("gallery/"+image.path, :alt => "") %>
+      <%# link_to image, image_path(@next_image)  %>
+      <%= image %>
+    <% else %>
+      <%= image %>
     <% end %>
   <% end %>
 

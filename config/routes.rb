@@ -1,7 +1,7 @@
-HaerfestUs::Application.routes.draw do
+HaerfestUs::Application.routes.draw do |map|
   get "images/gallery"
-
   get "image/gallery"
+  map.paginated_images 'images/page/:page', :controller => 'store', :action => 'gallery', :page => nil
 
   resources :images
 
@@ -9,8 +9,10 @@ HaerfestUs::Application.routes.draw do
   get "pages/about"
   get "pages/contact"
   
-  root :to => "pages#home"
-  match '/home',    :to => 'pages#home'
+  #root :to => "pages#home"
+  root :to => "images#gallery"
+  #match '/home',    :to => 'pages#home'
+  match '/home',    :to => 'images#gallery'
   match '/contact', :to => 'pages#contact'
   match '/about',   :to => 'pages#about'
 
