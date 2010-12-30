@@ -5,7 +5,14 @@ class ImagesController < ApplicationController
   def gallery
     @images = Image.paginate(:per_page => 1, :page => params[:page])
     @image = @images.first()
-    @next_image = @image.next
+    if @image.next
+      @has_image = 1
+      @next_image = @image.next
+    elsif
+      @has_image = 0
+      @images = Image.paginate(:per_page => 1, :page => params[:page])
+      @next_image = @images.first()
+    end
     if request.xml_http_request?
       render :partial => "section"
     end

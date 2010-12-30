@@ -1,7 +1,7 @@
-HaerfestUs::Application.routes.draw do |map|
+HaerfestUs::Application.routes.draw do 
   get "images/gallery"
   get "image/gallery"
-  map.paginated_images 'images/page/:page', :controller => 'store', :action => 'gallery', :page => nil
+  match '/gallery',    :to => 'images#gallery'
 
   resources :images
 

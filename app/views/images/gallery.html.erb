@@ -1,3 +1,24 @@
+<script>
+
+$(document).ready(function() {
+  $('div#slideshow img').live('click', function() {
+    var has_images = '<%= @has_image %>';
+    if( has_images == 1 ) {
+      var page = '<%= @next_image.id %>';
+      var url = '/images/gallery?page='+page
+      window.location.replace(url);
+    }
+    else {
+      var url = '/images/gallery?page=1'
+      window.location.replace(url);
+    }
+
+  })
+})
+
+</script>
+
+
 <div id="slideshow">
 
  
