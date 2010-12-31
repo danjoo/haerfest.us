@@ -33,7 +33,8 @@ section h1 {
 section .about {
 }
 
-section .contact {
+section .contact img{
+  vertical-align:text-bottom;
 }
 
 section .verbage {
