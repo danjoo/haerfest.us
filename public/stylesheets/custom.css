@@ -20,7 +20,8 @@ body {
 
 section {
   color: #333333;
-  height: 500px;
+  display:block;
+  height: 450px;
   font-family: "Century Gothic", "sans-serif";
 }
 
@@ -53,6 +54,11 @@ img {
   border-style: none;
 }
 
+.list img {
+  border: 1px solid #021a40;
+  height: 15%;
+  width:  15%;
+}
 
 /* Navigation Links */
 
