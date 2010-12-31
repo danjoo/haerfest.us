@@ -3,6 +3,7 @@ class ImagesController < ApplicationController
   # GET /images.xml
 
   def gallery
+    @title = "Home"
     @images = Image.paginate(:per_page => 1, :page => params[:page])
     @image = @images.first()
     if @image.next
