@@ -13,7 +13,7 @@ class PagesController < ApplicationController
   end
 
   def contact
-    @title = "contact"
+    @title = "Contact"
     #@images variable to access images
     @images = Image.all.paginate(:per_page => 1, :page => params[:page])  
   end
