@@ -9,10 +9,8 @@ HaerfestUs::Application.routes.draw do
   get "pages/about"
   get "pages/contact"
   
-  #root :to => "pages#home"
-  root :to => "images#gallery"
-  #match '/home',    :to => 'pages#home'
-  match '/home',    :to => 'images#gallery'
+  root :to => "pages#home"
+  match '/home',    :to => 'pages#home'
   match '/contact', :to => 'pages#contact'
   match '/about',   :to => 'pages#about'
 

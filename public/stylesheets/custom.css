@@ -6,47 +6,45 @@
         Purpose of the stylesheet follows.
 */
 
+.header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 .container {
 }
 
-header {
+.footer {
   text-align: center;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body {
   background: #fff;
-  text-align: center;
 }
 
-section {
-  color: #333333;
-  display:block;
-  height: 450px;
-  font-family: "Century Gothic", "sans-serif";
-}
 
-section h1 {
+h1 {
   font-size: 85%;
   color: #888888;
 }
 
-section .about {
+.about {
 }
 
-section .contact img{
+.contact img{
   vertical-align:text-bottom;
 }
 
-section .verbage {
+.verbage,.verbage img {
   font-size: 80%;
+  font-family: "Century Gothic", "sans-serif";
+  vertical-align:text-bottom;
 }
 
-footer {
-  text-align: center;
-  margin-top: 0px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 
 
 
@@ -63,7 +61,7 @@ img {
 
 /* Navigation Links */
 
-nav {
+.nav {
   float: none;
   background-color: white;
   /* padding: 0 0.7em; */
@@ -71,17 +69,17 @@ nav {
   white-space: nowrap;
 }
 
-nav a {
+.nav a {
   /* color: #09c; */
   text-decoration: none;
 }
 
-nav a:hover {
+.nav a:hover {
   /* color: #069; */
   text-decoration: underline;
 }
 
-nav a:visited {
+.nav a:visited {
   /* color: #069; */
   text-decoration: none;
 }
@@ -90,14 +88,17 @@ nav a:visited {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 a:hover {
   text-decoration: none;
+  text-decoration: underline;
 }
 
 a:visited {
   text-decoration: none;
+  color: black;
 }
 
 
@@ -115,4 +116,56 @@ a:visited {
 section .table {
   text-align:center;
   border-width: 1px;
+}
+
+
+
+
+
+#loopedslider {
+  margin:0 auto;
+  width:675px;
+  position:relative;
+  clear:both;
+}
+
+.slide_container {
+/*    width:800px;*/
+  height:450px;
+  overflow:hidden;
+  position:relative;
+  text-align: center;
+}
+
+.slides {
+  position:absolute;
+  top:0;
+  left:0;
+}
+.slides > div {
+  position:absolute;
+  top:0;
+  width:675px;
+  display:none;
+}
+
+.pagination_container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+ul.pagination {
+  list-style:none;
+  padding:0;
+  margin:0;
+  display: inline;
+}
+ul.pagination li  {
+  display: inline;
+}
+ul.pagination li a {
+  vertical-align:text-top;
+}
+ul.pagination li.active a {
+  text-decoration:underline;	
 }

@@ -6,15 +6,16 @@
     <%= render 'layouts/stylesheets' %>
     <%= render 'layouts/javascripts' %>
   </head>
+  <div class="header">
+    <%= render 'layouts/header' %>
+  </div>
   <body>
     <div class="container">
-      <%= render 'layouts/header' %>
-      <section class="round">
-        <%= yield %>
-      </section>
-      <%= render 'layouts/nav' %>
-      <%= render 'layouts/footer' %>
-      <%= debug(params) if Rails.env.development? %>
+      <%= yield %>
+      <%#= debug(params) if Rails.env.development? %>
     </div>
   </body>
+  <div class="footer">
+    <%= render 'layouts/footer' %>
+  </div>
 </html>

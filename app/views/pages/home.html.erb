@@ -1,1 +1,71 @@
-<%= image_tag("gallery/solitude_front_black.jpg", :alt => "solitude_front_black", :class => "round") %>
+
+
+
+
+<% page_A = image_tag("A.png", :alt => "A") %>
+<% page_1 = image_tag("1.png", :alt => "1") %>
+<% page_2 = image_tag("2.png", :alt => "2") %>
+<% page_3 = image_tag("3.png", :alt => "3") %>
+<% page_4 = image_tag("4.png", :alt => "4") %>
+<% page_C = image_tag("C.png", :alt => "C") %>
+<% page_A1 = image_tag("gallery/solitude_front_black.jpg", :alt => "")  %>
+<% page_A2 = image_tag("gallery/gotama_threequarter_black.jpg", :alt => "") %>
+<% page_A3 = image_tag("gallery/tao_front_black.jpg", :alt => "") %>
+<% page_A4 = image_tag("gallery/S4_front.jpg", :alt => "") %>
+
+<div id="loopedslider">
+  <div class="slide_container">
+    <div class="slides">
+      <div class="verbage">
+        <br /><br />
+        Haerfest follows a reducible aesthetic, aiming for an understated and urban sensibility. <p />
+        “Familiar yet unexpected,” is always an underlying direction taken when designing. <p />
+        Using quality materials, balancing proportions, and attending to details, <p />
+        we strive to create modern basics that age well.
+      </div>
+      <div id="A1">
+        <%= link_to page_A1, 'images/gallery/solitude_front_black.jpg' %>
+        <a href="images/gallery/solitude_back_black.jpg"  ></a>
+        <a href="images/gallery/solitude_front_navy.jpg" ></a>
+        <a href="images/gallery/solitude_back_navy.jpg"  ></a>
+      </div>
+
+      <div id="A2">
+        <%= link_to page_A2, 'images/gallery/gotama_threequarter_black.jpg' %>
+        <a href="images/gallery/gotama_threequarter_navy.jpg"  ></a>
+      </div>
+
+      <div id="A3">
+        <%= link_to page_A3, 'images/gallery/tao_front_black.jpg' %>
+        <a href="images/gallery/tao_front_navy1.jpg"  ></a>
+        <a href="images/gallery/tao_side_black.jpg"  ></a>
+        <a href="images/gallery/tao_side_navy.jpg"  ></a>
+      </div>
+
+      <div id="A4">
+        <%= link_to page_A4, 'images/gallery/S4_front.jpg' %>
+        <a href="images/gallery/S4_threequarter.jpg"  ></a>
+        <a href="images/gallery/S4_top.jpg"  ></a>
+      </div>
+
+      <div class="verbage">
+        <br /><br />
+        info<%= image_tag("at.png", :alt => "contact") %>haerfest.us
+      </div>
+    </div>
+  </div>
+
+
+<div class="pagination_container">
+  <ul class="pagination">
+      <li><%= link_to page_A, about_path %></li>
+      <li><%= link_to page_1, '#1' %></li>
+      <li><%= link_to page_2, '#2' %></li>
+      <li><%= link_to page_3, '#3' %></li>
+      <li><%= link_to page_4, '#4' %></li>
+      <li><%= link_to page_C, contact_path %></li>
+  </ul>
+</div>
+
+</div>
+  

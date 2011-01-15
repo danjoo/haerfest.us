@@ -1,0 +1,9 @@
+<div class="haerfest_pagination">
+      <%= will_paginate @images,  :previous_label => '&lsaquo; ',
+                                  :next_label     => '&rsaquo; ',
+                                  :params => { :controller => "images",
+                                               :action => "gallery" },
+                                  :separator      => '  ',
+                                  :inner_window   => 1,
+                                  :outer_window   => -1           %>
+</div>
