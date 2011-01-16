@@ -44,6 +44,13 @@ h1 {
   vertical-align:text-bottom;
 }
 
+.signature {
+  font-size: 65%;
+  font-family: "Century Gothic", "sans-serif";
+  text-align: center;
+  vertical-align:text-bottom;
+}
+
 .verbage,.verbage img {
   font-size: 80%;
 /*  font-family: 'Times New Roman', "serif";*/
@@ -163,7 +170,7 @@ section .table {
   text-align: center;
   margin-top: 10px;
   font-size: 70%;
-	letter-spacing: 0.15em;
+	word-spacing: 8px;
   font-family: "Century Gothic", "sans-serif";
 }
 
