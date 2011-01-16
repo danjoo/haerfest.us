@@ -16,7 +16,7 @@
 
 .footer {
   text-align: center;
-  margin-top: 15px;
+  margin-top: 8ex;
   margin-left: auto;
   margin-right: auto;
   font-family: "Century Gothic", "sans-serif";
@@ -40,14 +40,18 @@ h1 {
 .contact, .contact img{
   font-size: 80%;
   font-family: "Century Gothic", "sans-serif";
+  text-align: center;
   vertical-align:text-bottom;
 }
 
 .verbage,.verbage img {
   font-size: 80%;
-  /* font-family: 'Times New Roman'; */
+/*  font-family: 'Times New Roman', "serif";*/
   font-family: "Century Gothic", "sans-serif";
+  text-align: left;
   vertical-align:text-bottom;
+  margin-left: 5ex;
+  margin-top: 4.5ex;
 }
 
 
@@ -158,6 +162,9 @@ section .table {
 .pagination_container {
   text-align: center;
   margin-top: 10px;
+  font-size: 70%;
+	letter-spacing: 0.15em;
+  font-family: "Century Gothic", "sans-serif";
 }
 
 ul.pagination {
@@ -173,5 +180,6 @@ ul.pagination li a {
   vertical-align:text-top;
 }
 ul.pagination li.active a {
+  color: #888888;
   text-decoration:underline;	
 }
