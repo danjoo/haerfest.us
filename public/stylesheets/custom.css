@@ -8,7 +8,7 @@
 
 .header {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .container {
@@ -135,6 +135,11 @@ section .table {
   border-width: 1px;
 }
 
+
+.splash {
+  text-align: center;
+  /* vertical-align:middle;*/
+}
 
 
 

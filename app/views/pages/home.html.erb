@@ -1,6 +1,9 @@
 
-
-
+<div class="meerkat">
+  <div class="splash">
+  <%=  image_tag("haerfest_fw11.jpg", :alt => "") %>
+  </div>
+</div>
 
 <% page_A = image_tag("A.png", :alt => "A") %>
 <% page_1 = image_tag("1.png", :alt => "1") %>
@@ -13,26 +16,31 @@
 <% page_A3 = image_tag("gallery/tao_front_black.jpg", :alt => "") %>
 <% page_A4 = image_tag("gallery/S4_front.jpg", :alt => "") %>
 
+<div class="wrapper">
 <div id="loopedslider">
   <div class="slide_container">
     <div class="slides">
       <div>
 
-        <div class="verbage">
-          HÆRFEST : pronounced Har•vest (’härvist) is a bag label dedicated to elevating metropolitan
-          <p /> style <i>through a sophisticated urban sensibility</i>. Familiar shapes with unexpected inner workings
-          <p /> seamlessly meld creating a line of <i>deceptively simple modern classics</i>.
-          <br /><br />
-          <p /> With <i>uncompromising design and craftsmanship</i> every choice and detail is carefully weighed.
-          <p /> We believe trends come and go but quality materials, balanced proportions and attention to detail
-          <p /> will undoubtedly stand the test of time.
-        </div>
-        
         <div class="signature">
-          <br /><br />
-          <p />
-          <u>HÆRFEST GROUPE</u>
+          <%=  image_tag("haerfestabout.jpg", :alt => "") %>
         </div>
+
+        <%#*<div class="verbage">%>
+          <%#*HÆRFEST : pronounced Har•vest (’härvist) is a bag label dedicated to elevating metropolitan%>
+          <%#*<p /> style <i>through a sophisticated urban sensibility</i>. Familiar shapes with unexpected inner workings%>
+          <%#*<p /> seamlessly meld creating a line of <i>deceptively simple modern classics</i>.%>
+          <%#*<br /><br />%>
+          <%#*<p /> With <i>uncompromising design and craftsmanship</i> every choice and detail is carefully weighed.%>
+          <%#*<p /> We believe trends come and go but quality materials, balanced proportions and attention to detail%>
+          <%#*<p /> will undoubtedly stand the test of time.%>
+        <%#*</div>%>
+        
+        <%#*<div class="signature">%>
+          <%#*<br /><br />%>
+          <%#*<p />%>
+          <%#*<u>TIM AND DAN</u>%>
+        <%#*</div>%>
 
       </div>
       <div id="A1">
@@ -61,8 +69,7 @@
       </div>
 
       <div class="contact">
-        <br /><br />
-        info<%= image_tag("at.png", :alt => "contact") %>haerfest.us
+        <%=  image_tag("haerfestcontact.jpg", :alt => "") %>
       </div>
     </div>
   </div>
@@ -79,5 +86,6 @@
   </ul>
 </div>
 
+</div>
 </div>
   
