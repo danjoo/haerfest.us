@@ -27,7 +27,7 @@
 			// Configuration related to navigation
 			fixedNavigation:		false,		// (boolean) Boolean that informs if the navigation (next and prev button) will be fixed or not in the interface.
 			// Configuration related to images
-			imageLoading:			'images/lightbox/lightbox-ico-loading.gif',		// (string) Path and the name of the loading icon
+			imageLoading:			'images/lightbox/loading.gif',		// (string) Path and the name of the loading icon
 			imageBtnPrev:			'images/lightbox/arrow_left.png',			// (string) Path and the name of the prev button image
 			imageBtnNext:			'images/lightbox/arrow_right.png',			// (string) Path and the name of the next button image
 			imageBtnClose:			'images/lightbox/lightbox-btn-close.gif',		// (string) Path and the name of the close btn
