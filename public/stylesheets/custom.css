@@ -19,6 +19,9 @@
   margin-top: 15px;
   margin-left: auto;
   margin-right: auto;
+  font-family: "Century Gothic", "sans-serif";
+  color: #888888;
+  font-size: 40%;
 }
 
 body {
@@ -34,12 +37,15 @@ h1 {
 .about {
 }
 
-.contact img{
+.contact, .contact img{
+  font-size: 80%;
+  font-family: "Century Gothic", "sans-serif";
   vertical-align:text-bottom;
 }
 
 .verbage,.verbage img {
   font-size: 80%;
+  /* font-family: 'Times New Roman'; */
   font-family: "Century Gothic", "sans-serif";
   vertical-align:text-bottom;
 }
