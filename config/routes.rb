@@ -1,7 +1,10 @@
 HaerfestUs::Application.routes.draw do 
-  get "images/gallery"
-  get "image/gallery"
-  match '/gallery',    :to => 'images#gallery'
+  #get "images/gallery"
+  #get "image/gallery"
+  #match '/gallery',    :to => 'images#gallery'
+  match '/images',    :to => 'pages#home'
+  match '/images/gallery',    :to => 'pages#home'
+  match '/gallery',    :to => 'pages#home'
 
   resources :images
 
@@ -11,8 +14,10 @@ HaerfestUs::Application.routes.draw do
   
   root :to => "pages#home"
   match '/home',    :to => 'pages#home'
-  match '/contact', :to => 'pages#contact'
-  match '/about',   :to => 'pages#about'
+  #match '/contact', :to => 'pages#contact'
+  #match '/about',   :to => 'pages#about'
+  match '/contact', :to => 'pages#home'
+  match '/about',   :to => 'pages#home'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

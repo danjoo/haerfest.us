@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
 
   def home
-    @title = "Home"
+    @title = ""
     #@images variable to access images
     @images = Image.all.paginate(:per_page => 1, :page => params[:page])
   end
