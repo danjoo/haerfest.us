@@ -3,7 +3,7 @@ $(function(){
 $('.meerkat').meerkat({
 
 	background: '#fff repeat-x left top',
-	height: '475px',
+	height: '476px',
 	width: '100%',
 	position: 'center',
 	dontShowAgain: '#enter',
