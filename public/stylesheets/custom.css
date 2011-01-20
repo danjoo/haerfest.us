@@ -6,6 +6,11 @@
         Purpose of the stylesheet follows.
 */
 
+/*@font-face {
+	font-family: cool_font;
+	src: url('cool_font.ttf');
+}*/
+
 .header {
   text-align: center;
   margin-bottom: 20px;
@@ -38,7 +43,7 @@ h1 {
 }
 
 .contact, .contact img{
-  font-size: 80%;
+  font-size: 12px;
   font-family: "Century Gothic", "sans-serif";
   text-align: center;
   vertical-align:text-bottom;
@@ -52,8 +57,9 @@ h1 {
 }
 
 .verbage,.verbage img {
-  font-size: 80%;
+  font-size: 12px;
 /*  font-family: 'Times New Roman', "serif";*/
+  color: white;
   font-family: "Century Gothic", "sans-serif";
   text-align: left;
   vertical-align:text-bottom;
